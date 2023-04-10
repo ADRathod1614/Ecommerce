@@ -2,9 +2,7 @@ const path=require('path')
 const express=require('express');
 const nav=express();
 const port=3000;
-//built in middleware
-//relative absolute
-//console.log(__dirname);
+
 
 const staticPath=path.join(__dirname,'../static website');
 nav.use(express.static(staticPath));
